@@ -7,7 +7,7 @@ export class DataService {
   data = [];
 
   constructor(private http : HttpClient,) {
-    this.setData();
+  //  this.setData();
   }
 
   getData(){
@@ -18,12 +18,12 @@ export class DataService {
        .set('Content-Type','application/json')
      });
   }
-
+/*
   setData(){
     this.getData().subscribe(result => {
      this.data = result;
      console.log('dataServicio:',this.data);
    });
   }
-
+*/
 }
