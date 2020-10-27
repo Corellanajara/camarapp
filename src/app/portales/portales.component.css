@@ -1,0 +1,30 @@
+/*
+.nav-bar{
+  height: 70px;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(49,49,204,1) 0%, rgba(115,111,254,1) 100%);
+  background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+*/
+
+.title-portal{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
