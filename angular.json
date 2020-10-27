@@ -26,7 +26,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/vue/dist/vue.min.js",
+              "src/libs/vue-chart/vue-chart-component.min.js"
+            ]
           },
           "configurations": {
             "production": {
