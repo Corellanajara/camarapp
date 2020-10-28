@@ -1,9 +1,59 @@
-<div class="nav-bar">
-  <h1 class="title-portal">Portales</h1>
+<div class="principal-container">
+<div class="bar">
+  <div class="input-box">
+    <input class="input" type="search" placeholder="Buscar">
+  </div>
+  <div class="text-bar-container">
+    <h1>Cerrar Sesión</h1>
+  </div>
 </div>
 
-<ul>
-    <li *ngFor="let item of items" style="cursor: pointer;"  routerLink="/dashboard" routerLinkActive="active" >
-        {{item}}
-    </li>
-</ul>
+  <div class="sides-container">
+      <div class="left-side">
+        <div class="card-container" *ngFor="let item of items" (click)="selectItem(item)">
+          <div class="card-wrapper">
+            <div class="image-container">
+              <img class="image" src="https://pbs.twimg.com/profile_images/714449847852642304/-YebACih.jpg">
+            </div>
+            <div class="text-container" style="cursor: pointer;">
+                <h1 class="title-card">{{item.title}}</h1>
+                <h1 class="subtitle-card">{{item.url}}</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="final-item">
+        </div>
+      </div>
+
+      <div class="rigth-side">
+        <div *ngIf="portal!=''">
+          <div class="image-right-title">
+            <img src="https://www.fisalis.vase.cl/assets/icon/sucursal.svg" class="">
+          </div>
+
+          <div class="container-title">
+            <h1 class="right-title">{{portal.url}}</h1>
+          </div>
+          <div class="buttons-container">
+            <div class="button-container">
+              <button class="login-button" routerLink="/dashboard" routerLinkActive="active" >Ingresar</button>
+            </div>
+            <div class="button-container">
+              <button class="login-button" routerLink="/dashboard" routerLinkActive="active" >Configuraciones</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="portal==''">
+          <div class="image-right-title">
+            <img src="./assets/unselected-chart2.svg" class="">
+          </div>
+
+          <div class="container-title">
+            <h1 class="right-title">No has seleccionado ningún portal por el momento</h1>
+          </div>
+        </div>
+      </div>
+   </div>
+</div>

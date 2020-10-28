@@ -111,7 +111,8 @@
 
 .rigth-side{
   /*background: #1B0709;*/
-  background: linear-gradient(90deg, rgba(49,49,204,1) 0%, rgba(115,111,254,1) 100%);
+  /*background: linear-gradient(90deg, rgba(49,49,204,1) 0%, rgba(115,111,254,1) 100%);*/
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,153,233,1) 100%);
   background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
   width: 32%;
