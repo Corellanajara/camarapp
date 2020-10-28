@@ -1,4 +1,30 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+    <div ng-class="element.size" *ngFor="let element of elements" >      
+        <bar-chart-app class="prueba" [msg]="'asgasg'" [xaxisCategories]="element.categories" [dataSeries]="element.series" *ngIf="element.type == 'bar'">            
+        </bar-chart-app>
+        
+        <donut-chart-app class="prueba" [msg]="element.name" [dataSeries]="element.series" [dataLabels]="element.labels" *ngIf="element.type == 'donut'">            
+        </donut-chart-app>
 
-<vue-chart-component  msg="item.value"></vue-chart-component>
-  
+        <progress-chart-app class="prueba" [msg]="element.name" [dataSeries]="element.series" [dataLabels]="element.labels" *ngIf="element.type == 'progress'">
+        </progress-chart-app>
+
+        <area-chart-app class="prueba" [msg]="element.name" [title]="element.title" [subtitle]="element.subtitle" [dataSeries]="element.series" *ngIf="element.type == 'area'">
+        </area-chart-app>
+
+        <spark-chart-app class="prueba" [msg]="element.name" [dataSeries]="element.series" :sparklineType="element.sparklineType" [chartTitle]="element.title" [chartSubtitle]="element.subtitle" *ngIf="element.type == 'sparkline'">            
+        </spark-chart-app>
+
+        <line-column-chart-app class="prueba" [msg]="element.name" [dataSeries]="element.series" [dataLabels]="element.labels" [yaxisTitle]="element.yTitle" *ngIf="element.type == 'mixed'">            
+        </line-column-chart-app>
+
+        <polar-chart-app class="prueba" [dataSeries]="element.series" [dataLabels]="element.labels" *ngIf="element.type == 'polar'">            
+        </polar-chart-app>
+        
+        <triple-chart-app class="prueba" [xaxisCategories]="element.categories" [dataSeries]="element.series" [title]="element.title" *ngIf="element.type == 'tripleLine'">
+        </triple-chart-app>
+        
+        <line-chart-app class="prueba" [xaxisCategories]="element.categories" [dataSeries]="element.series" *ngIf="element.type == 'line'">            
+        </line-chart-app>        
+    </div>
+</div>
