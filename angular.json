@@ -27,8 +27,19 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/vue/dist/vue.min.js",
-              "src/libs/vue-chart/vue-chart-component.min.js"
+              "node_modules/vue/dist/vue.min.js",              
+              "src/libs/charts/dashboard-app.js",
+              "src/libs/charts/area-chart-app.min.js",
+              "src/libs/charts/bar-chart-app.js",
+              "src/libs/charts/donut-chart-app.min.js",
+              "src/libs/charts/line-chart-app.js",
+              "src/libs/charts/line-column-chart-app.min.js",
+              "src/libs/charts/polar-chart-app.min.js",
+              "src/libs/charts/progress-chart-app.min.js",
+              "src/libs/charts/spark-chart-app.min.js",
+              "src/libs/charts/card-custom-app.js",
+              "src/libs/charts/triple-chart-app.js"              
+             
             ]
           },
           "configurations": {
